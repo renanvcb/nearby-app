@@ -9,7 +9,7 @@ export const s = StyleSheet.create({
   content: {
     gap: 12,
     padding: 24,
-    paddingBottom: 100,
+    paddingBottom: 10,
   },
   indicator: {
     width: 80,
