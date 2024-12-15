@@ -9,6 +9,7 @@ import { colors, fontFamily } from "@/styles/theme";
 import { Categories, CategoriesProps } from "@/components/categories";
 import { PlaceProps } from "@/components/place";
 import { Places } from "@/components/places";
+import { router } from "expo-router";
 
 // type MarketProps = PlaceProps
 interface MarketProps extends PlaceProps {
@@ -129,7 +130,7 @@ export default function Home() {
             }}
             image={require("@/assets/pin.png")}
           >
-            <Callout>
+            <Callout onPress={() => router.navigate(`/market/${market.id}`)}>
               <View>
                 <Text
                   style={{
