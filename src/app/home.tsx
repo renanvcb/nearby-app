@@ -79,6 +79,10 @@ export default function Home() {
 
   useEffect(() => {
     fetchPlaces();
+  }, []);
+
+  useEffect(() => {
+    fetchPlaces();
   }, [category]);
 
   // useEffect(() => {
